@@ -12,6 +12,7 @@ usually less than the typical clock frequency of the FPGA master device. General
 have a PS (prescale factor) and the output clock is 2^(-PS) times the input clock frequency.
 
 The Clock Division module has the following ports :
+
 ➔ INPUT:
 ● iclk: This is the main clock of the FPGA.
 ● rst: This is the reset input.
@@ -26,6 +27,7 @@ Communication. (All four SPI modes are supported)
 frequency at which SPI communication is destined to happen.
   
 The SPI module has the following ports :
+  
 ➔ INPUT:
 ● iclk, rst: iclk is the input clock and rst is the input reset.
 ● MISO: MISO is the Master In Slave Out input pin which is used to send data to the
