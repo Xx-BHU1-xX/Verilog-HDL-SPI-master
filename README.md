@@ -11,9 +11,9 @@ The Clock Division module is necessary to ensure that SPI communication happens 
 usually less than the typical clock frequency of the FPGA master device. Generally, we
 have a PS (prescale factor) and the output clock is 2^(-PS) times the input clock frequency.
 
-The Clock Division module has the following ports :
+## The Clock Division module has the following ports :
 
-➔ INPUT:
+### ➔ INPUT:
 
 ● iclk: This is the main clock of the FPGA.
 
@@ -25,14 +25,14 @@ frequency of the input clock so that SPI communication can be established.
 ● mode: <register>  This is the input which is used to select the mode of operation of SPI
 Communication. (All four SPI modes are supported)
   
-➔ OUTPUT:
+### ➔ OUTPUT:
   
 ● oclk: oclk is the output that is obtained from this module which gives the resulting clock
 frequency at which SPI communication is destined to happen.
   
-The SPI module has the following ports :
+## The SPI module has the following ports :
   
-➔ INPUT:
+### ➔ INPUT:
   
 ● iclk, rst: iclk is the input clock and rst is the input reset.
   
@@ -47,7 +47,7 @@ sends a control signal to the fpga board indicating start of trnsmission.
   
 ● mode, ps: mode and ps are the same as defined above in the clock division module.
   
-➔ OUTPUT:
+### ➔ OUTPUT:
   
 ● r: r is an 8 bit vector which represents a received byte to be sent out by the master device
 to the slave device.
