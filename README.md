@@ -49,8 +49,7 @@ sends a control signal to the fpga board indicating start of trnsmission.
   
 ### ➔ OUTPUT:
   
-● r: r is an 8 bit vector which represents a received byte to be sent out by the master device
-to the slave device.
+● r: r is an 8 bit vector which represents a received byte.
   
 ● rv: rv is the received byte valid output signal which indicated succesful data reception.
   
