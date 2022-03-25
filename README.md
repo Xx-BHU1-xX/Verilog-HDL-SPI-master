@@ -11,6 +11,9 @@ The Clock Division module is necessary to ensure that SPI communication happens 
 usually less than the typical clock frequency of the FPGA master device. Generally, we
 have a PS (prescale factor) and the output clock is 2^(-PS) times the input clock frequency.
 
+![alt text](https://github.com/Xx-BHU1-xX/Verilog-HDL-SPI-master/blockDiagram.jpeg?raw=true)
+
+
 ## The Clock Division module has the following ports :
 
 ### ➔ INPUT:
